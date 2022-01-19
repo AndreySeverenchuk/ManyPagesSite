@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Enter</title>
+</head>
+<body>
+<!----- <body class="sidebar-active"> ---->
+    <!-- sprites-->
+    <svg display="none">
+    	<symbol id="facebook" viewBox="-25 -30 150 150">
+    		<g>
+    			<path d="M-80 -80 H250 V250 H0z"/>
+    			<path fill="#fff" d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+    		</g>
+    	</symbol>
+    	<symbol id="linkedin" viewBox="0 0 30 30">
+    		<g>
+    			<path d="M0 0 H30 V30 H0 z"/>
+    			<path fill="#fff" d="M6 12.5L10 12.5 10 20.45 10 24 6 24zM8 11L8 11c-1.2 0-2-.85-2-1.9s.8-1.85 2-1.85 1.95.8 2 1.85C10 10.15 9.25 11 8 11zM23.353 24h-3.949c0 0 0-5.973 0-6.417s-.049-1.974-1.728-1.974c-1.481 0-1.728 1.431-1.728 1.974s0 6.417 0 6.417H12V12.647h3.949v1.53c0 0 .79-1.53 3.11-1.53 2.369 0 4.294 1.629 4.294 4.936V24z" />
+    		</g>
+    	</symbol>
+    	<symbol id="instagram" viewBox="10 12 45 45">
+    		<path d="M0 0 H64 V64 H0 z"/>
+    		<circle cx="41" cy="25" r="2" fill="#fff"/>
+    		<path fill="#fff" d="M32,20c4.6,0,5.1,0,6.9,0.1c1.7,0.1,2.6,0.4,3.2,0.6c0.8,0.3,1.4,0.7,2,1.3c0.6,0.6,1,1.2,1.3,2 c0.2,0.6,0.5,1.5,0.6,3.2C46,28.9,46,29.4,46,34s0,5.1-0.1,6.9c-0.1,1.7-0.4,2.6-0.6,3.2c-0.3,0.8-0.7,1.4-1.3,2 c-0.6,0.6-1.2,1-2,1.3c-0.6,0.2-1.5,0.5-3.2,0.6C37.1,48,36.6,48,32,48s-5.1,0-6.9-0.1c-1.7-0.1-2.6-0.4-3.2-0.6 c-0.8-0.3-1.4-0.7-2-1.3c-0.6-0.6-1-1.2-1.3-2c-0.2-0.6-0.5-1.5-0.6-3.2C18,39.1,18,38.6,18,34s0-5.1,0.1-6.9 c0.1-1.7,0.4-2.6,0.6-3.2c0.3-0.8,0.7-1.4,1.3-2c0.6-0.6,1.2-1,2-1.3c0.6-0.2,1.5-0.5,3.2-0.6C26.9,20,27.4,20,32,20 M32,17 c-4.6,0-5.2,0-7,0.1c-1.8,0.1-3,0.4-4.1,0.8c-1.1,0.4-2.1,1-3,2s-1.5,1.9-2,3c-0.4,1.1-0.7,2.3-0.8,4.1C15,28.8,15,29.4,15,34 s0,5.2,0.1,7c0.1,1.8,0.4,3,0.8,4.1c0.4,1.1,1,2.1,2,3c0.9,0.9,1.9,1.5,3,2c1.1,0.4,2.3,0.7,4.1,0.8c1.8,0.1,2.4,0.1,7,0.1 s5.2,0,7-0.1c1.8-0.1,3-0.4,4.1-0.8c1.1-0.4,2.1-1,3-2c0.9-0.9,1.5-1.9,2-3c0.4-1.1,0.7-2.3,0.8-4.1c0.1-1.8,0.1-2.4,0.1-7 s0-5.2-0.1-7c-0.1-1.8-0.4-3-0.8-4.1c-0.4-1.1-1-2.1-2-3s-1.9-1.5-3-2c-1.1-0.4-2.3-0.7-4.1-0.8C37.2,17,36.6,17,32,17L32,17z"/>
+    		<path fill="#fff" d="M32,25c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S37,25,32,25z M32,40c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S35.3,40,32,40 z"/>
+    	</symbol>
+    	<symbol id="twitter" viewBox="-11 -10 50 50">
+    		<g>
+    			<path d="M-20 -20 H60 V60 H-20 z"/>
+    			<path fill="#fff" d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" />
+    		</g>
+    	</symbol>
+    	<symbol id="cross" viewBox="0 0 100 100">			
+    		<g>
+    			<circle cx="50" cy="50" r="50" fill="#000"/>
+    		</g>
+    		<g>
+    			<path d="M42 15 H58 V85 H42 z" fill="#fff"/>
+    		</g>
+    		<g>
+    			<path d="M15 42 H85 V58 H15 z" fill="#fff"/>
+    		</g>
+    	</symbol>
+    	<symbol id="burger-svg" viewBox="0 0 40 40">			
+    		<g>
+    			<path d="M0 0 H40 V5 H0 z"/>
+    		</g>
+    		<g>
+    			<path d="M0 17 H40 V23 H0 z"/>
+    		</g>
+    		<g>
+    			<path d="M0 35 H40 V40 H0 z"/>
+    		</g>
+    	</symbol>
+    	<symbol id="burger-X" viewBox="0 0 40 40">			
+    		<g>
+    			<polyline stroke-width="5px" points="0,0 40,40" />
+    		</g>
+    		<g>
+    			<polyline stroke-width="5px" points="0,40 40,0" />
+    		</g>
+    	</symbol>
+    	<symbol id="spritic" viewBox="0 0 500 500">
+      		<path style="fill: rgb(219, 226, 18); stroke: rgb(108, 191, 25); stroke-opacity: 0.61; stroke-miterlimit: 37; stroke-linejoin: bevel; stroke-linecap: round; paint-order: fill markers; stroke-width: 15px;" d="M 144.942 207.198 C 205.737 247.213 245.683 221.204 259.332 199.971 C 269.704 179.22 251.963 57.99 264.591 42.802 C 279.636 20.787 313.312 21.116 341.44 42.802 C 364.598 66.148 353.182 179.39 347.429 202.201 C 336.023 237.939 530.384 134.148 483.463 212.062 C 474.418 223.768 476.918 253.187 438.716 277.238 C 420.234 288.489 368.162 305.307 347.699 289.57 C 336.806 279.346 378.795 475.681 348.249 508.755 C 332.685 524.436 287.938 521.857 271.401 508.755 C 234.694 476.654 300.886 295.225 264.039 295.452 C 241.729 300.497 170.233 298.707 142.996 283.074 C 120.126 270.856 87.502 163.999 144.942 207.198 Z"></path>
+    	</symbol>
+    	<symbol id="dot" viewBox="0 0 10 10">
+    		<path style="fill: #fff";>
+    			<circle cx="5" cy="5" r="5"/>
+    		</path> 
+    	</symbol>
+    </svg>
+    <!-- end sprites -->
+    <div class="page">
+
+        <header class="header">
+            <div class="burger" id="burger">
+                <span></span>
+            </div>
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#" class="nav__link">Статьи</a>
+                            <ul class="subnav__list">
+                                <li>
+                                    <a href="post.html" class="subnav__link">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="aboutme.html" class="nav__link">Обо мне</a>
+                        </li>
+                        <li>
+                            <a class="nav__link">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="profile.html" class="nav__link">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Выйти</a>
+                        </li>
+                    </ul>
+                    <form class="search" action="search.html" method="get">
+                        <input class="search__input" type="text" placeholder="Поиск по блогу">
+                    </form>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar__header">
+                <img src="assets/images/sidebar/sidebarHeader.jpg" alt="">
+            </div>
+            <div class="sidebar__avatar">
+                <img src="assets/images/avatar/avatar.jpg" alt="Андрей Север">
+            </div>
+            <div class="sidebar__intro">
+                <div class="sidebar__profile">
+                    <div class="sidebar__name">
+                        Андрей Северенчук
+                    </div>
+                    <div class="sidebar__profession">
+                        блог front-end разработчика
+                    </div>
+                </div>
+                <div class="socialnets">
+                    <a href="#">
+                        <svg class="icon facebook">
+                            <use xlink:href="#facebook">                 
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon instagram">
+                            <use xlink:href="#instagram">                
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon linkedin">
+                            <use xlink:href="#linkedin">                 
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon twitter">
+                            <use xlink:href="#twitter">                     
+                            </use>
+                        </svg>
+                    </a>
+                </div><!-- socialnets -->
+                <div class="sidebar__text">
+                    <p>Начинающий Front-end разработчик. Верстаю сайты. HTML, CSS, JS, LESS, SASS, GULP, WordPress</p>
+                </div> 
+        <!-----  навигация сайдбара ------>
+                <nav class="nav--sidebar">
+                    <ul>
+                        <li>
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="subnav">
+                            <a href="#" class="nav__link">Статьи</a>
+                            <ul class="subnav__list--sidebar">
+                                <li>
+                                    <a href="post.html" class="subnav__link">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="aboutme.html" class="nav__link">Обо мне</a>
+                        </li>
+                        <li>
+                            <a class="nav__link">Реклама</a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="nav__link">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">Выйти</a>
+                        </li>
+                    </ul>
+                </nav> <!--  end nav sidebar -->    
+            </div><!-- sidebar__intro -->
+            <div class="sidebar__footer">
+                <a href="works.html"class="btn btn--red">Мои работы</a>
+                <button data-modal="modal-contact" method="get" class="btn btn--blue">Написать мне</button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-contact">
+            <div class="modal__content">
+                <div class="modal__close">
+                    <svg class="icon">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </div>
+                <div class="admin">
+                    <form class="form" action="/" method="get">
+                        <input class="form__textarea textarea--admin form__textarea--light" name="login" type="login" placeholder="Введите ваш логин" value="Имя">
+                        <input class="form__textarea textarea--admin form__textarea--light" type="e-mail" name="e-mail" placeholder="Введите ваш e-mail">
+                        <textarea class="form__textarea textarea--admin form__textarea--light" type="text" name="message" placeholder="Ваше сообщение"></textarea>
+                        <button class="btn__small btn--center" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <ul class="admin__act">
+                    <li>
+                        <a href="#">Мой e-mail: severandy21@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Мой тел: (034) 657-43-54</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal" id="modal-share">
+            <div class="modal__content">
+                <div class="modal__close">
+                    <svg class="icon">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </div>
+                <div class="admin">
+                    <div class="modal__socialnets">
+                        <a href="#">
+                            <svg class="icon facebook">
+                                <use xlink:href="#facebook">                 
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon instagram">
+                                <use xlink:href="#instagram">                
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon linkedin">
+                                <use xlink:href="#linkedin">                 
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon twitter">
+                                <use xlink:href="#twitter">                     
+                                </use>
+                            </svg>
+                        </a>
+                    </div><!-- socialnets -->
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-story">
+            <div class="modal__content modal--story">
+                <video class="modal__video" src="" poster="../assets/images/stories/storym.jpg">            
+                </video>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                
+                <!-- ------ enter -------- -->
+                <div class="page__title page--center">
+                    <h2>Вход</h2>
+                </div>
+                <div class="admin">
+                    <form class="form" action="profile.html" method="get">
+                        <input class="form__textarea textarea--admin" name="login" placeholder="Введите ваш логин">
+                        <input class="form__textarea textarea--admin" name="password" placeholder="Введите ваш пароль">
+                        <button class="btn__small btn--center" type="submit">Войти</button>
+                    </form>
+                </div>
+                <ul class="admin__act">
+                    <li>
+                        <a href="reset.html">восстановить</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mask" id="mask">
+            </div>
+        </div>
+        
+
+        <footer class="footer">Footer</footer>
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
