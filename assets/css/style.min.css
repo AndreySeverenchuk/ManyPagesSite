@@ -1810,6 +1810,22 @@ p {
 .modal--story {
   padding: 0;
 }
+@media (max-width: 479px) {
+  .modal--story {
+    display: block;
+    width: 90vmin;
+    height: 125vmin;
+    overflow: hidden;
+  }
+}
+@media (max-height: 600px) {
+  .modal--story {
+    display: block;
+    width: 65vmin;
+    height: 90vmin;
+    overflow: hidden;
+  }
+}
 
 .modal__close {
   position: absolute;

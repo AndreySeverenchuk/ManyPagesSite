@@ -1318,7 +1318,7 @@ p {
 
 .add-story__textarea {
     width: calc(100% - 13.5rem);
-    height: 4rem;
+    height: 3.2rem;
 }
 
 @media (max-width: 575px) {
@@ -1340,6 +1340,7 @@ p {
     padding-right: 1rem;
     padding-left: 1rem;
     text-align: right;
+    vertical-align: bottom;
 }
 
 @media (max-width: 575px) {
