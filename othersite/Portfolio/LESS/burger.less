@@ -1,0 +1,93 @@
+// main: style.less, out: @font-feature-values
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 1rem 0;
+}
+
+.burger-svg {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-left: 0.6rem;
+    fill: @black;
+    transition: transform 0.2s linear;
+}
+
+@media @tablet {
+    .burger {display: block;}
+}
+
+@media @smart {
+    .burger-svg {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.4rem;
+    }
+}
+
+.burger:hover .burger-svg {
+    fill: @orange;
+}
+
+.burger-svg--a {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-left: 0.6rem;
+    stroke: @black;
+    transform: scaleY(0);
+    transition: transform 0.2s linear;
+}
+
+.nav--a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb("white", 0.4);
+    padding: 1rem 6rem 1rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    .nav-link + .nav-link {
+        margin-left: 0;
+    }
+
+    a {
+        margin: 1rem 0 0 0;
+    }
+}
+
+.nav--a.but-min {
+    margin-top: 2rem;
+    margin-left: -1rem;
+}
+
+
+@media @book {
+
+    .nav--a {
+        font-size: 1.15vw;
+        padding: 1vw 6vw 1vw 1vw;
+    }
+}
+
+@media @tablet {
+
+    .nav--a {
+        font-size: 0.9rem;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+}
+
+@media @smart {
+
+    .nav--a {
+        font-size: 1.15rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}

@@ -1,0 +1,55 @@
+/// main: style.less, out: false
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem -15px;
+}
+
+.project-item {
+	width: 33.3%;
+	padding: 0 15px;
+	margin-bottom: 1.8rem;
+}
+
+.spec-border {
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.project-pic {
+	margin-bottom: 1.4rem;
+}
+
+.project-text {
+	padding: 0 1.3rem;
+	text-transform: uppercase;
+}
+
+.project-text a {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.2rem;
+}
+
+.project-footer {
+	width: 100%;
+	margin: 0 auto 4rem auto;
+	text-align: center;
+}
+
+@media @tablet {
+
+	.project-item {
+		width: 50%;
+	}
+}
+
+@media @smart {
+
+	.project-item {
+		width: 100%;
+	}
+}
+

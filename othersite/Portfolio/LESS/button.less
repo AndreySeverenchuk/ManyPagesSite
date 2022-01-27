@@ -1,0 +1,161 @@
+// main: style.less, out: false
+
+.but {
+	display: inline-block;
+	min-width: 14.6rem;
+	font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1.2rem 2rem;
+    border: 2px solid @grey;
+    border-radius: 2rem;
+    text-align: center;
+
+    & + .but {
+    	margin-left: 1.2rem;
+    }
+
+    &:hover, &:focus {
+        background-color: @black;
+        color: @white;
+        transition: 0.2s linear;
+    }
+}
+
+.but-min {
+    display: inline-block;
+    min-width: 10rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid @grey;
+    border-radius: 2rem;
+    text-align: center;
+
+    &:hover, &:focus {
+        background-color: @black;
+        color: @white;
+        transition: 0.2s linear;
+    }
+}
+
+.but-foot {
+    display: inline-block;
+    min-width: 10rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.6rem 1.5rem;
+    border: 2px solid @grey-light;
+    border-radius: 2rem;
+    text-align: center;
+
+    &:hover, &:focus {
+        background-color: @grey-light;
+        color: @black;
+        transition: 0.2s linear;
+    }
+}
+
+.but--resume {
+    width: 17rem;
+}
+
+@media @book {
+
+    .but {
+        min-width: 14.6vw;
+        font-size: 1.3vw;
+        padding: 1.2vw 2vw;
+        border-radius: 2vw;
+
+        & + .but {
+            margin-left: 1.2vw;
+        }
+    }
+
+    .but-min {
+        min-width: 10vw;
+        padding: 0.6vw 1.5vw;
+        font-size: 1.15vw;
+        border-radius: 1.7vw;
+    }
+
+    .but-foot {
+        min-width: 10vw;
+        font-size: 1.15vw;
+        padding: 0.6vw 1.5vw;
+        border-radius: 2vw;
+    }
+
+    .but--resume {
+        width: 17vw;
+    }
+}
+
+@media @tablet {
+
+    .but {
+        min-width: 9rem;
+        font-size: 0.9rem;
+        padding: 0.9rem 1.25rem;
+        border-radius: 1.5rem;
+
+        & + .but {
+            margin-left: 0.9rem;
+        }
+    }
+
+    .but-min {
+        padding: 0.6rem 1.1rem;
+        font-size: 0.9rem;
+        border-radius: 1.2rem;
+    }
+
+    .but-foot {
+        font-size: 1rem;
+        padding: 0.6rem 1.1rem;
+        border-radius: 1rem;
+    }
+
+    .but--resume {
+        width: 13rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .but {
+        min-width: auto;
+        padding: 0.7rem 0.9rem;
+
+        & + .but {
+            margin-left: 0.4rem;
+        }
+    }
+
+    .but-min {
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+@media @smart {
+
+    .but-min {
+        min-width: 10rem;
+        padding: 0.6rem 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    .but-foot {
+        min-width: 10rem;
+        font-size: 1.15rem;
+        padding: 0.6rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .but--resume {
+        width: 17rem;
+    }
+}

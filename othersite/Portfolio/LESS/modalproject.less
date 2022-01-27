@@ -1,0 +1,93 @@
+// main: style.less, out: false
+
+.modal-project {
+    display: flex;
+    color: @grey;
+}
+
+.m-project-left {
+    width: 66%;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.m-project-right {
+    width: 34%;
+    padding: 2rem 1rem 0.5rem 2rem;
+    position: relative;
+
+    span {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h6 {
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.m-p-right-text-title {
+    margin-bottom: 0.3rem;
+}
+
+.m-p-right-text-subtitle {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.m-p-right-text {
+    height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 5rem;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: @grey;
+    }
+}
+
+.m-p-right-button-m {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+.m-p-right-but-prev {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+
+    span {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.m-p-right-but-next {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+
+    span {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media (max-height: 40rem) {
+    .m-p-right-text {
+        height: 30vh;
+    }
+}

@@ -1,0 +1,243 @@
+// main: style.less, out: false
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;  
+}
+
+body {
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: @grey;
+
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 7.7rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+p {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon {
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-left: 0.67rem;
+    
+    &:hover, &.active {
+        transform: translate(-0.4rem, -0.4rem);
+        transition: 0.2s linear;
+    }
+}
+
+.icon-mini {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.2rem;
+    
+    &:hover, &.active {
+        transform: translate(-0.1rem, -0.1rem);
+        transition: 0.2s linear;
+    }
+}
+
+.icon-modal {
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(45grad);
+
+    &:hover, &.active {
+        transform: rotate(0grad);
+        transition: 0.2s linear;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-mini {
+    width: 100%;
+    max-width: 880px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+@media @monitor {
+    h1 {font-size: 7.5vw;}
+}
+
+@media @book {
+    h1 {font-size: 7vw;}
+    h2 {font-size: 4vw;}
+    h3 {font-size: 2.5rem;}
+    h4 {font-size: 1.5rem;}
+    h5 {font-size: 1.3rem;}
+
+    .icon {
+        width: 3.7vw;
+        height: 3.7vw;
+        margin-left: 0.67vw;
+        }
+    
+    .icon-mini {
+        width: 2.5vw;
+        height: 2.5vw;
+        }
+    
+    .icon-modal {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+    
+@media @tablet {
+    h1 {font-size: 7vw;}
+    h2 {font-size: 4vw;}
+    h3 {font-size: 3vw;}
+    h4 {font-size: 2.4vw;}
+}
+
+@media @intermediate {
+
+    h1 {font-size: 6.5vw;}
+    h2 {font-size: 2rem;}
+    h3 {font-size: 1.5rem;}
+    h4 {font-size: 1.3rem;}
+    h5 {font-size: 1.2rem;}
+
+    .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.45rem;
+        }
+    
+    .icon-mini {
+        width: 1.3rem;
+        height: 1.3rem;
+        }
+}
+    
+@media @smart {
+    html {font-size: 14px;}
+    h1 {font-size: 12vw;}
+    h2 {font-size: 10vw;}
+    h3 {font-size: 2rem;}
+    h4 {font-size: 1.4rem;}
+    h5 {font-size: 1.2rem;}
+}
+
+#behance {
+    fill: @behance;
+}
+
+#behance-black {
+    fill: @black;
+}
+
+#circle {
+    fill: @circle;
+}
+
+#circle-black {
+    fill: @black;
+}
+
+#facebook {
+    fill: @facebook;
+}
+
+#facebook-black {
+    fill: @black;
+}
+
+#instagram {
+    fill: @instagram;
+}
+
+#instagram-black {
+    fill: @black;
+}
+
+#linkedin {
+    fill: @linkedin;
+}
+
+#linkedin-black {
+    fill: @black;
+}
+
+#twitter {
+    fill: @twitter;
+}
+
+#twitter-black {
+    fill: @black;
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="noscroll">
+	<!-- sprites-->
+	<svg style="display: none">
+		<symbol id="behance" viewBox="5 6 36 36">
+			<g>
+				<path d="M0 0 H48 V48 H0z" />
+				<path fill="#fff" d="M27 17H34V19H27zM21.512 23.428c.585-.285 1.903-.934 1.903-2.857 0-3.617-3.952-3.57-4.683-3.57H12v14h7.025C19.61 31 24 30.835 24 26.999 24 24.524 22.39 23.714 21.512 23.428zM15 19.428h2.928c.292 0 2.195.104 2.195 1.572 0 1.467-1.463 1.714-1.902 1.714H15V19.428zM18.336 28.571h-3.367v-3.856h3.367c.731 0 2.341.237 2.341 2C20.677 28.476 18.628 28.571 18.336 28.571zM32.438 28.395c-.465.289-.929.436-1.549.436-2.326 0-2.789-1.961-2.789-2.83H36c0-.869 0-1.511-.155-2.236C35.689 23.04 34.63 20 30.734 20 25.289 20 25 24.778 25 25.5c0 .723.156 1.593.467 2.171.309.724.619 1.304 1.084 1.736.464.435 1.083.866 1.703 1.157C29.028 30.855 29.803 31 30.578 31c1.238 0 2.324-.288 3.253-.868.931-.579 1.55-1.448 2.014-2.606h-2.633C33.057 27.816 32.902 28.104 32.438 28.395zM30.734 22.027c1.518 0 2.168 1.592 2.322 2.314H28.1C28.1 24.198 28.471 22.027 30.734 22.027z" />
+			</g>
+		</symbol>
+		<symbol id="circle" viewBox="0 0 512 512">
+			<g>
+				<path d="M0 0 H512 V512 H0z" />
+			</g>
+			<g>
+				<circle cx="256" cy="256" fill="none" r="140.5" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M203,124.5c49.9,46.1,112.1,183.4,116.6,256.8" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M354.8,156.1c-10.8,45.9-154.1,102.5-238.2,82.6" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M161,359.5c40.9-83.9,162.6-124.3,235.2-95.5" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+			</g>
+		</symbol>
+		<symbol id="facebook" id="facebook-black" viewBox="-25 -30 150 150">
+			<g>
+				<path d="M-80 -80 H250 V250 H0z"/>
+				<path fill="#fff" d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+			</g>
+		</symbol>
+		<symbol id="linkedin" viewBox="0 0 30 30">
+			<g>
+				<path d="M0 0 H30 V30 H0 z"/>
+				<path fill="#fff" d="M6 12.5L10 12.5 10 20.45 10 24 6 24zM8 11L8 11c-1.2 0-2-.85-2-1.9s.8-1.85 2-1.85 1.95.8 2 1.85C10 10.15 9.25 11 8 11zM23.353 24h-3.949c0 0 0-5.973 0-6.417s-.049-1.974-1.728-1.974c-1.481 0-1.728 1.431-1.728 1.974s0 6.417 0 6.417H12V12.647h3.949v1.53c0 0 .79-1.53 3.11-1.53 2.369 0 4.294 1.629 4.294 4.936V24z" />
+			</g>
+		</symbol>
+		<symbol id="instagram" viewBox="-37 -37 200 200">
+			<g>
+				<path d="M-50 -50 H200 V200 H-50 z"/>
+				<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
+				<radialGradient cx="19.1111" cy="128.4444" r="163.5519">
+				<stop offset="0" style="stop-color:#FFB140" />
+				<stop offset="0.2559" style="stop-color:#FF5445" />
+				<stop offset="0.599" style="stop-color:#FC2B82" />
+				<stop offset="1" style="stop-color:#8E40B7" />
+				</radialGradient>
+				<path clip-rule="evenodd" d="M105.843,29.837    c0,4.242-3.439,7.68-7.68,7.68c-4.241,0-7.68-3.438-7.68-7.68c0-4.242,3.439-7.68,7.68-7.68    C102.405,22.157,105.843,25.595,105.843,29.837z M64,85.333c-11.782,0-21.333-9.551-21.333-21.333    c0-11.782,9.551-21.333,21.333-21.333c11.782,0,21.333,9.551,21.333,21.333C85.333,75.782,75.782,85.333,64,85.333z M64,31.135    c-18.151,0-32.865,14.714-32.865,32.865c0,18.151,14.714,32.865,32.865,32.865c18.151,0,32.865-14.714,32.865-32.865    C96.865,45.849,82.151,31.135,64,31.135z M64,11.532c17.089,0,19.113,0.065,25.861,0.373c6.24,0.285,9.629,1.327,11.884,2.204    c2.987,1.161,5.119,2.548,7.359,4.788c2.24,2.239,3.627,4.371,4.788,7.359c0.876,2.255,1.919,5.644,2.204,11.884    c0.308,6.749,0.373,8.773,0.373,25.862c0,17.089-0.065,19.113-0.373,25.861c-0.285,6.24-1.327,9.629-2.204,11.884    c-1.161,2.987-2.548,5.119-4.788,7.359c-2.239,2.24-4.371,3.627-7.359,4.788c-2.255,0.876-5.644,1.919-11.884,2.204    c-6.748,0.308-8.772,0.373-25.861,0.373c-17.09,0-19.114-0.065-25.862-0.373c-6.24-0.285-9.629-1.327-11.884-2.204    c-2.987-1.161-5.119-2.548-7.359-4.788c-2.239-2.239-3.627-4.371-4.788-7.359c-0.876-2.255-1.919-5.644-2.204-11.884    c-0.308-6.749-0.373-8.773-0.373-25.861c0-17.089,0.065-19.113,0.373-25.862c0.285-6.24,1.327-9.629,2.204-11.884    c1.161-2.987,2.548-5.119,4.788-7.359c2.239-2.24,4.371-3.627,7.359-4.788c2.255-0.876,5.644-1.919,11.884-2.204    C44.887,11.597,46.911,11.532,64,11.532z M64,0C46.619,0,44.439,0.074,37.613,0.385C30.801,0.696,26.148,1.778,22.078,3.36    c-4.209,1.635-7.778,3.824-11.336,7.382C7.184,14.3,4.995,17.869,3.36,22.078c-1.582,4.071-2.664,8.723-2.975,15.535    C0.074,44.439,0,46.619,0,64c0,17.381,0.074,19.561,0.385,26.387c0.311,6.812,1.393,11.464,2.975,15.535    c1.635,4.209,3.824,7.778,7.382,11.336c3.558,3.558,7.127,5.746,11.336,7.382c4.071,1.582,8.723,2.664,15.535,2.975    C44.439,127.926,46.619,128,64,128c17.381,0,19.561-0.074,26.387-0.385c6.812-0.311,11.464-1.393,15.535-2.975    c4.209-1.636,7.778-3.824,11.336-7.382c3.558-3.558,5.746-7.127,7.382-11.336c1.582-4.071,2.664-8.723,2.975-15.535    C127.926,83.561,128,81.381,128,64c0-17.381-0.074-19.561-0.385-26.387c-0.311-6.812-1.393-11.464-2.975-15.535    c-1.636-4.209-3.824-7.778-7.382-11.336c-3.558-3.558-7.127-5.746-11.336-7.382c-4.071-1.582-8.723-2.664-15.535-2.975    C83.561,0.074,81.381,0,64,0z" fill="#fff" fill-rule="evenodd"/>
+			</g>
+		</symbol>
+		<symbol id="twitter" viewBox="-11 -10 50 50">
+			<g>
+				<path d="M-20 -20 H60 V60 H-20 z"/>
+				<path fill="#fff" d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" />
+			</g>
+		</symbol>
+		<!-- black -->
+		<symbol id="behance-black" viewBox="5 6 36 36">
+			<g>
+				<path d="M0 0 H48 V48 H0z" />
+				<path fill="#8d8d8e" d="M27 17H34V19H27zM21.512 23.428c.585-.285 1.903-.934 1.903-2.857 0-3.617-3.952-3.57-4.683-3.57H12v14h7.025C19.61 31 24 30.835 24 26.999 24 24.524 22.39 23.714 21.512 23.428zM15 19.428h2.928c.292 0 2.195.104 2.195 1.572 0 1.467-1.463 1.714-1.902 1.714H15V19.428zM18.336 28.571h-3.367v-3.856h3.367c.731 0 2.341.237 2.341 2C20.677 28.476 18.628 28.571 18.336 28.571zM32.438 28.395c-.465.289-.929.436-1.549.436-2.326 0-2.789-1.961-2.789-2.83H36c0-.869 0-1.511-.155-2.236C35.689 23.04 34.63 20 30.734 20 25.289 20 25 24.778 25 25.5c0 .723.156 1.593.467 2.171.309.724.619 1.304 1.084 1.736.464.435 1.083.866 1.703 1.157C29.028 30.855 29.803 31 30.578 31c1.238 0 2.324-.288 3.253-.868.931-.579 1.55-1.448 2.014-2.606h-2.633C33.057 27.816 32.902 28.104 32.438 28.395zM30.734 22.027c1.518 0 2.168 1.592 2.322 2.314H28.1C28.1 24.198 28.471 22.027 30.734 22.027z" />
+			</g>
+		</symbol>
+		<symbol id="circle-black" viewBox="0 0 512 512">
+			<g>
+				<path d="M0 0 H512 V512 H0z" />
+			</g>
+			<g>
+				<circle cx="256" cy="256" fill="none" r="140.5" stroke="#8d8d8e" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M203,124.5c49.9,46.1,112.1,183.4,116.6,256.8" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M354.8,156.1c-10.8,45.9-154.1,102.5-238.2,82.6" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+				<path d="M161,359.5c40.9-83.9,162.6-124.3,235.2-95.5" fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="20" />
+			</g>
+		</symbol>
+		<symbol id="facebook-black" id="facebook-black" viewBox="-25 -30 150 150">
+			<g>
+				<path d="M-80 -80 H250 V250 H0z"/>
+				<path fill="#8d8d8e" d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+			</g>
+		</symbol>
+		<symbol id="linkedin-black" viewBox="0 0 30 30">
+			<g>
+				<path d="M0 0 H30 V30 H0 z"/>
+				<path fill="#8d8d8e" d="M6 12.5L10 12.5 10 20.45 10 24 6 24zM8 11L8 11c-1.2 0-2-.85-2-1.9s.8-1.85 2-1.85 1.95.8 2 1.85C10 10.15 9.25 11 8 11zM23.353 24h-3.949c0 0 0-5.973 0-6.417s-.049-1.974-1.728-1.974c-1.481 0-1.728 1.431-1.728 1.974s0 6.417 0 6.417H12V12.647h3.949v1.53c0 0 .79-1.53 3.11-1.53 2.369 0 4.294 1.629 4.294 4.936V24z" />
+			</g>
+		</symbol>
+		<symbol id="instagram-black" viewBox="-37 -37 200 200">
+			<g>
+				<path d="M-50 -50 H200 V200 H-50 z"/>
+				<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
+				<radialGradient cx="19.1111" cy="128.4444" r="163.5519">
+				<stop offset="0" style="stop-color:#FFB140" />
+				<stop offset="0.2559" style="stop-color:#FF5445" />
+				<stop offset="0.599" style="stop-color:#FC2B82" />
+				<stop offset="1" style="stop-color:#8E40B7" />
+				</radialGradient>
+				<path clip-rule="evenodd" d="M105.843,29.837    c0,4.242-3.439,7.68-7.68,7.68c-4.241,0-7.68-3.438-7.68-7.68c0-4.242,3.439-7.68,7.68-7.68    C102.405,22.157,105.843,25.595,105.843,29.837z M64,85.333c-11.782,0-21.333-9.551-21.333-21.333    c0-11.782,9.551-21.333,21.333-21.333c11.782,0,21.333,9.551,21.333,21.333C85.333,75.782,75.782,85.333,64,85.333z M64,31.135    c-18.151,0-32.865,14.714-32.865,32.865c0,18.151,14.714,32.865,32.865,32.865c18.151,0,32.865-14.714,32.865-32.865    C96.865,45.849,82.151,31.135,64,31.135z M64,11.532c17.089,0,19.113,0.065,25.861,0.373c6.24,0.285,9.629,1.327,11.884,2.204    c2.987,1.161,5.119,2.548,7.359,4.788c2.24,2.239,3.627,4.371,4.788,7.359c0.876,2.255,1.919,5.644,2.204,11.884    c0.308,6.749,0.373,8.773,0.373,25.862c0,17.089-0.065,19.113-0.373,25.861c-0.285,6.24-1.327,9.629-2.204,11.884    c-1.161,2.987-2.548,5.119-4.788,7.359c-2.239,2.24-4.371,3.627-7.359,4.788c-2.255,0.876-5.644,1.919-11.884,2.204    c-6.748,0.308-8.772,0.373-25.861,0.373c-17.09,0-19.114-0.065-25.862-0.373c-6.24-0.285-9.629-1.327-11.884-2.204    c-2.987-1.161-5.119-2.548-7.359-4.788c-2.239-2.239-3.627-4.371-4.788-7.359c-0.876-2.255-1.919-5.644-2.204-11.884    c-0.308-6.749-0.373-8.773-0.373-25.861c0-17.089,0.065-19.113,0.373-25.862c0.285-6.24,1.327-9.629,2.204-11.884    c1.161-2.987,2.548-5.119,4.788-7.359c2.239-2.24,4.371-3.627,7.359-4.788c2.255-0.876,5.644-1.919,11.884-2.204    C44.887,11.597,46.911,11.532,64,11.532z M64,0C46.619,0,44.439,0.074,37.613,0.385C30.801,0.696,26.148,1.778,22.078,3.36    c-4.209,1.635-7.778,3.824-11.336,7.382C7.184,14.3,4.995,17.869,3.36,22.078c-1.582,4.071-2.664,8.723-2.975,15.535    C0.074,44.439,0,46.619,0,64c0,17.381,0.074,19.561,0.385,26.387c0.311,6.812,1.393,11.464,2.975,15.535    c1.635,4.209,3.824,7.778,7.382,11.336c3.558,3.558,7.127,5.746,11.336,7.382c4.071,1.582,8.723,2.664,15.535,2.975    C44.439,127.926,46.619,128,64,128c17.381,0,19.561-0.074,26.387-0.385c6.812-0.311,11.464-1.393,15.535-2.975    c4.209-1.636,7.778-3.824,11.336-7.382c3.558-3.558,5.746-7.127,7.382-11.336c1.582-4.071,2.664-8.723,2.975-15.535    C127.926,83.561,128,81.381,128,64c0-17.381-0.074-19.561-0.385-26.387c-0.311-6.812-1.393-11.464-2.975-15.535    c-1.636-4.209-3.824-7.778-7.382-11.336c-3.558-3.558-7.127-5.746-11.336-7.382c-4.071-1.582-8.723-2.664-15.535-2.975    C83.561,0.074,81.381,0,64,0z" fill="#8d8d8e" fill-rule="evenodd"/>
+			</g>
+		</symbol>
+		<symbol id="twitter-black" viewBox="-11 -10 50 50">
+			<g>
+				<path d="M-20 -20 H60 V60 H-20 z"/>
+				<path fill="#8d8d8e" d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" />
+			</g>
+		</symbol>
+		<symbol id="cross" viewBox="0 0 100 100">			
+			<g>
+				<circle cx="50" cy="50" r="50" fill="#333"/>
+			</g>
+			<g>
+				<path d="M42 15 H58 V85 H42 z" fill="#fff"/>
+			</g>
+			<g>
+				<path d="M15 42 H85 V58 H15 z" fill="#fff"/>
+			</g>
+		</symbol>
+		<symbol id="burger" viewBox="0 0 40 40">			
+			<g>
+				<path d="M0 0 H40 V5 H0 z"/>
+			</g>
+			<g>
+				<path d="M0 17 H40 V23 H0 z"/>
+			</g>
+			<g>
+				<path d="M0 35 H40 V40 H0 z"/>
+			</g>
+		</symbol>
+		</symbol>
+		<symbol id="burger-A" viewBox="0 0 40 40">			
+			<g>
+				<polyline stroke-width="5px" points="0,0 40,40" />
+			</g>
+			<g>
+				<polyline stroke-width="5px" points="0,40 40,0" />
+			</g>
+		</symbol>
+	</svg>
+	<!-- end sprites -->
+
+	<header id="header">
+		<div class="container">
+			<div class="sub-header">
+				<div class="headnote">
+					<h5>Andrey<br>Severenchuk</h5>
+					<h6>HTML/CSS developer</h6>
+					<img src="http://via.placeholder.com/60x60" class="avatar" alt="">
+				</div>
+				<nav class="nav">
+					<a href="#" class="nav-link" data-scroll="work">work</a>
+					<a href="#" class="nav-link" data-scroll="aboutme">about me</a>
+					<a href="#" class="nav-link" data-scroll="blog">blog</a>
+					<a href="#" class="nav-link" data-scroll="contact">contact</a>
+					<a href="#" class="but-min nav-link" data-m="m-contact">hire me</a>
+				</nav>
+				<div class="burger">
+					<svg class="burger-svg">
+						<use xlink:href="#burger"></use>
+					</svg>
+					<svg class="burger-svg--a hide">
+						<use xlink:href="#burger-A"></use>
+					</svg>
+				</div>
+			</div>
+		</div>		
+	</header>
+
+	<div class="container">
+		<div class="name" id="aboutme">
+			<div class="name-content">
+				<h3>Hello, I’m</h3>
+				<h2>Andrey Severenchuk</h2>
+				<h4>HTML/CSS developer</h4>
+				<div class="social">
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#behance">
+							</use>
+						</svg>
+					</a>
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#circle">
+							</use>
+						</svg>
+					</a>
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#linkedin">
+							</use>
+						</svg>
+					</a>
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#facebook">
+							</use>
+						</svg>
+					</a>
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#instagram">
+							</use>
+						</svg>
+					</a>
+					<a href="#" target="-blank">
+						<svg class="icon">
+							<use xlink:href="#twitter">
+							</use>
+						</svg>
+					</a>
+				</div>
+				<div class="name-but">
+					<a href="#" class="but" data-m="m-contact">hire me</a>
+					<a href="#" class="but" data-m="m-resume">see my resume</a>
+				</div>
+			</div><!-- end name-intro -->
+			<div class="name-pic">
+				<img src="./IMG/PNG/name.png" alt="">
+			</div>
+		</div>
+		<!-- end name -->	
+		<div id="work" class="name-footer">
+			<a href="#" data-filter="all">All</a>
+			<a href="#" data-filter="app">App</a>
+			<a href="#" data-filter="website">Website</a>
+			<a href="#" data-filter="interaction">Interaction</a>
+		</div>
+		<!-- end name--footer -->
+		<div class="projects">
+			<div class="project-item" data-cat="app">
+				<div class="spec-border">
+					<div class="project-pic">
+						<a href="#" data-m="m-project-1">
+							<img src="http://via.placeholder.com/370x300" class="project-pic" alt="">
+						</a>
+					</div>
+					<div class="project-text">
+						<h6>category: app</h6>
+						<a href="#" data-m="m-project-1">
+							<h5>Project title</h5>
+							<h5>2021</h5>
+						</a>
+					</div>	
+				</div>
+			</div><!-- end project-item -->
+			<div class="project-item" data-cat="website">
+				<div class="spec-border">
+					<div class="project-pic">
+						<a href="#" data-m="m-project-2">
+							<img src="http://via.placeholder.com/370x300" class="project-pic" alt="">
+						</a>
+					</div>
+					<div class="project-text">
+						<h6>category: website</h6>
+						<a href="#" data-m="m-project-2">
+							<h5>Project title</h5>
+							<h5>2021</h5>
+						</a>
+					</div>	
+				</div>
+			</div><!-- end project-item -->
+			<div class="project-item"  data-cat="app">
+				<div class="spec-border">
+					<div class="project-pic">
+						<a href="#">
+							<img src="http://via.placeholder.com/370x300" class="project-pic" alt="">
+						</a>
+					</div>
+					<div class="project-text">
+						<h6>category: app</h6>
+						<a href="#">
+							<h5>Project title</h5>
+							<h5>2021</h5>
+						</a>
+					</div>	
+				</div>
+			</div><!-- end project-item -->
+			<div class="project-item"  data-cat="website">
+				<div class="spec-border">
+					<div class="project-pic">
+						<a href="#">
+							<img src="http://via.placeholder.com/370x300" class="project-pic" alt="">
+						</a>
+					</div>
+					<div class="project-text">
+						<h6>category: website</h6>
+						<a href="#">
+							<h5>Project title</h5>
+							<h5>2021</h5>
+						</a>
+					</div>	
+				</div>
+			</div><!-- end project-item -->
+			<div class="project-item"  data-cat="interaction">
+				<div class="spec-border">
+					<div class="project-pic">
+						<a href="#">
+							<img src="http://via.placeholder.com/370x300" class="project-pic" alt="">
+						</a>
+					</div>
+					<div class="project-text">
+						<h6>category: interaction</h6>
+						<a href="#">
+							<h5>Project title</h5>
+							<h5>2021</h5>
+						</a>
+					</div>	
+				</div>
+			</div><!-- end project-item -->			
+		</div>
+		<!-- end projects -->
+		<div class="project-footer">
+			<a href="#" class="but-min">load more work</a>
+		</div>
+		<!-- end project-footer -->
+		<div class="about">
+			<div class="about-pic">
+				<img src="http://via.placeholder.com/570x630" alt="">
+			</div>
+			<div class="about-content">
+				<h2 class="spec-h2">About me</h2>
+				<h1 class="spec-h1">Who am I</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius </p>
+				<div class="about-but">
+					<a href="#" class="but" data-m="m-contact">hire me</a>
+					<a href="#" class="but" data-m="m-resume">see my resume</a>
+				</div>
+			</div>
+			<!-- end about-content -->
+		</div>
+		<!-- end about -->
+	</div><!-- end container -->
+	<div class="testi">
+		<div class="container-mini">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.
+			</p>
+		</div>
+		<!-- end container-mini -->
+		<div class="testi-avatar">
+			<img src="http://via.placeholder.com/100x100" alt="">
+		</div>
+		<div class="testi-note">
+			<h5>Edward M. Brooks</h5>
+			Marketing House
+			<div class="stars">
+					
+			</div>
+		</div>		
+	</div>
+	<!-- end testimonial -->
+	<div class="container">
+		<div id="blog" class="blog">
+			<div class="blog-title">
+				<h2>Read me</h2>
+				<h4>Sometimes i write something smart</h4>
+			</div>
+			<div class="blog-content">
+				<div class="blog-item">
+					<a href="#">
+						<img src="http://via.placeholder.com/370x260" alt="">
+					</a>
+					<div class="blog-date">
+						10<br>december
+					</div>
+					<div class="blog-text">
+						<a href="#">
+							<h5>Ten the best app in 2017</h5>
+						</a>
+							<h6>Category</h6>
+						<a href="#">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
+						</a>
+					</div>	
+					<div class="but-min">read more</div>
+					
+				</div>
+				<!-- end blog-item -->
+				<div class="blog-item">
+					<a href="#">
+						<img src="http://via.placeholder.com/370x260" alt="">
+					</a>
+					<div class="blog-date">
+						15<br>december
+					</div>
+					<div class="blog-text">
+						<a href="#">
+							<h5>WEBSITE INSPIRATION</h5>
+						</a>
+							<h6>Category</h6>
+						<a href="#">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
+						</a>
+					</div>	
+					<div class="but-min">read more</div>
+					
+				</div>
+				<!-- end blog-item -->
+				<div class="blog-item">
+					<a href="#">
+						<img src="http://via.placeholder.com/370x260" alt="">
+					</a>
+					<div class="blog-date">
+						5<br>january
+					</div>
+					<div class="blog-text">
+						<a href="#">
+							<h5>CHANGES IN SOCIAL</h5>
+						</a>
+							<h6>Category</h6>
+						<a href="#">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p>
+						</a>
+					</div>	
+					<div class="but-min">read more</div>
+					
+				</div>
+				<!-- end blog-item -->
+			</div>
+			<!-- end blog-content -->
+			<div class="blog-footer">
+				<a href="#">See more posts</a>
+			</div>
+		</div>
+		<!-- end blog -->
+	</div>
+	<!-- end container -->
+	<footer id="contact">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-left">
+					<div class="footer-text">
+						© 2018 UI43 - Free Templates
+					</div>	
+					<div class="social-foot">
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#behance-black">
+								</use>
+							</svg>
+						</a>
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#circle-black">
+								</use>
+							</svg>
+						</a>
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#linkedin-black">
+								</use>
+							</svg>
+						</a>
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#facebook-black">
+								</use>
+							</svg>
+						</a>
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#instagram-black">
+								</use>
+							</svg>
+						</a>
+						<a href="#" target="-blank">
+							<svg class="icon-mini">
+								<use xlink:href="#twitter-black">
+								</use>
+							</svg>
+						</a>
+					</div>
+					<!-- end social -->
+				</div>
+				<!-- end footer-left -->
+				<div class="footer-right">
+					<nav class="nav">
+					<a href="#" class="nav-foot" data-scroll="work">Work</a>
+					<a href="#" class="nav-foot" data-scroll="aboutme">About me</a>
+					<a href="#" class="nav-foot" data-scroll="blog">Blog</a>
+					<a href="#" class="nav-foot" data-scroll="contact">Contact</a>
+					<a href="#" class="nav-foot but-foot" data-m="m-contact">hire me</a>
+				</nav>
+				</div>
+			</div>
+			<!-- end footer-content -->	
+		</div>
+		<!-- end container -->
+	</footer>
+
+	<!-- Modal windows -->
+	<!-- Modal window One 1 -->
+	<div id="m-project-1" class="modal">
+		<div class="modal-aline">
+			<div class="modal-project">
+				<div class="m-project-left">
+					<div data-slick="slick">
+						<div>
+							<img src="http://via.placeholder.com/780x720/fff" 	alt="">
+						</div>
+						<div>
+							<img src="http://via.placeholder.com/780x720" 	alt="">
+						</div>
+					</div>
+				</div>
+				<!-- end m-project-left -->
+				<div class="m-project-right">
+					<span>Project title 1</span>
+					<h6>Categore | 2019</h6>
+					<div class="m-p-right-text-title"><h5>Client</h5></div>
+					<div class="m-p-right-text-subtitle">Creative agency</div>
+					<div class="m-p-right-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+						</p>						
+					</div>
+					<div class="m-p-right-button-m" data-close="close">
+						<svg class="icon-modal">
+							<use xlink:href="#cross"></use>
+						</svg>
+					</div>
+					<div class="m-p-right-but-prev">
+						<a><i class="fas fa-chevron-left"></i><span> Previous</span></a>
+					</div>
+					<div class="m-p-right-but-next">
+						<a><span>Next </span><i class="fas fa-chevron-right"></i></a>
+					</div>
+				</div>
+				<!-- end m-project-right -->
+			</div>
+			<!-- end modal-project -->
+		</div>
+		<!-- end modal-aline -->
+	</div>
+	<!-- end modal #first 1 -->
+	<!-- Modal window One 2 -->
+	<div id="m-project-2" class="modal">
+		<div class="modal-aline">
+					<div class="modal-project">
+						<div class="m-project-left">
+							<div data-slick="slick">
+								<div>
+									<img src="http://via.placeholder.com/780x720/333" 	alt="">
+								</div>
+								<div>
+									<img src="http://via.placeholder.com/780x720" 	alt="">
+								</div>
+							</div>
+						</div>
+						<!-- end m-project-left -->
+						<div class="m-project-right">
+							<span>Project title 2</span>
+							<h6>Categore | 2019</h6>
+							<div class="m-p-right-text-title"><h5>Client</h5></div>
+							<div class="m-p-right-text-subtitle">Creative agency</div>
+							<div class="m-p-right-text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+								</p>						
+							</div>
+							<div class="m-p-right-button-m" data-close="close">
+								<svg class="icon-modal">
+									<use xlink:href="#cross"></use>
+								</svg>
+							</div>
+							<div class="m-p-right-but-prev">
+								<a><i class="fas fa-chevron-left"></i><span> Previous</span></a>
+							</div>
+							<div class="m-p-right-but-next">
+								<a><span>Next </span><i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<!-- end m-project-right -->
+					</div>
+					<!-- end modal-project -->
+		</div>
+		<!-- end modal-aline -->
+	</div>
+	<!-- end modal #first 2 -->
+	<!-- Modal window Two -->
+	<div id="m-resume" class="modal">
+		<div class="modal-aline">
+			<div class="modal-resume">
+				<h3>Resume</h3>
+				<div class="buttons">
+					<div class="but-min but--resume">Download resume</div>
+					<div class="but-min but--resume">ferere</div>
+				</div>
+				<div class="m-t-right-button-m" data-close="close">
+					<svg class="icon-modal">
+						<use xlink:href="#cross"></use>
+					</svg>
+				</div>
+				<div class="m-r-intro">
+					<div class="m-r-intro-left">
+						<h5>EXPERIENS</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+						</p>		
+					</div>
+					<div class="m-r-intro-right">
+						<h5>EDUCATION</h5>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+						</p>	
+					</div>
+				</div>
+			</div>
+			<!-- end modal-resume -->
+		</div>
+		<!-- end modal-aline -->
+	</div>
+	<!-- end modal #second -->
+	<!-- Modal window Three -->
+	<div id="m-contact" class="modal">
+		<div class="modal-aline modal--mini">
+			<div class="modal-talk">
+				<div class="m-talk-left">
+					<h3>Let's talk</h3>
+					<h5>Call me</h5>
+					<ul class="contact-info">
+						<li class="contact-info-item">
+							<img class="icon-mini" src="IMG/socicons/circle.svg" alt="">
+							333-3334333
+						</li>
+						<li class="contact-info-item">
+							<img class="icon-mini" src="IMG/socicons/behance.svg" alt="">
+							vfff@ggg.ua
+						</li>	
+					</ul>
+					<form class="m-t-form" action="/" method="post">
+						<div class="form-aline">
+							<label for="e-mail" class="m-t-label">Adress e-mail</label>
+							<br>
+							<input type="text" id="e-mail" class="m-t-input" name="e-mail" placeholder="Input adress of e-mail">
+						</div>
+						<div class="form-aline">	
+							<label for="input-text" class="m-t-label">Request</label>
+							<br>
+							<textarea id="input-text" class="m-t-textarea" name="input-text"></textarea>
+						</div>
+					</form>
+					<div class="form-but-aline">
+						<div class="but">SEND</div>
+					</div>
+				</div>
+				<div class="m-talk-right">
+					<img src="http://via.placeholder.com/477x700" alt="">
+					<div class="m-t-right-button-m" data-close="close">
+						<svg class="icon-modal">
+							<use xlink:href="#cross"></use>
+						</svg>
+					</div>
+				</div>			
+			</div>
+			<!-- end modal-talk -->
+		</div>
+		<!-- end modal-aline -->
+	</div>
+	<!-- end modal #third -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="JS/slick.min.js"></script>	
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

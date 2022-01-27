@@ -1,0 +1,85 @@
+// main: style.less, out: false
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+.fixed {
+		position: fixed;
+		z-index: 5;
+	}
+
+.sub-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	margin-top: 1rem;
+	background: rgb("white", 0.4);
+	position: relative;
+}
+
+.headnote {
+	position: relative;
+	padding-left: 6rem;
+
+	h5 {
+		margin-top: 0.8rem;
+		margin-bottom: 0.4rem;
+	}
+}
+
+.avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+
+.nav {
+	font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1rem 0 1.2rem 2rem;
+}
+
+.nav-link {
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	margin-left: 3rem;
+
+	&:after {
+		position: absolute;
+		display: none;
+		content: "";
+		width: 100%;
+		height: 2px;
+		background-color: @black;
+		left: 0;
+		top: 1.6rem;
+	}
+
+	&:hover:after {
+		display: block;
+		transition: 0.2s linear;
+	}
+
+	&:last-child:hover:after {
+		display: none;
+	}
+}
+
+@media @book {
+	.nav-link {margin-left: 3vw;}
+}
+
+@media @tablet {
+	.nav {display: none;}
+}
+
+@media @smart {}

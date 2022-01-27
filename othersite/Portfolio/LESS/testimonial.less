@@ -1,0 +1,49 @@
+// main: style.less, out: false
+
+.testi {
+	width: 100%;
+	margin: 9rem auto 19rem auto;
+	background: url("./IMG/bg/testimonial.jpg") center no-repeat;
+	background-size: cover;
+	padding-top: 5.8rem;
+	padding-bottom: 6.7rem;
+	position: relative;
+
+	p {
+		font-size: 1.2rem;
+		font-weight: 200;
+		line-height: 2.2;
+		color: @white;
+	}
+}
+								
+.testi-avatar {
+	width: 8rem;
+	height: 8rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	border: 5px solid @white;
+	border-radius: 50%;
+	overflow: hidden;
+
+	img {
+		margin: auto;
+	}
+}
+
+.testi-note {
+	position: absolute;
+	bottom: -9rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+@media @smart {
+	.testi-avatar {
+		width: 6rem;
+		height: 6rem;
+	}
+}
