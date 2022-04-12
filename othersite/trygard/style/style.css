@@ -114,12 +114,12 @@ img {
 
 .present__foto2 {
     width: 40%;
-    padding: 0 0 4rem 4rem;
+    padding: 0 0 2rem 2rem;
 }
 
 .present__foto33 {
     width: 33%;
-    padding: 0 0 4rem 4rem;
+    padding: 0 0 2rem 2rem;
 }
 
 .product-details {
@@ -149,6 +149,8 @@ img {
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 6rem;
     margin-bottom: 3rem;
     font-size: 1.6rem;
@@ -158,6 +160,7 @@ footer {
 
 footer a {
     margin-left: 2rem;
+    white-space: nowrap;
 }
 
 
@@ -165,6 +168,11 @@ footer a {
 
     .nav {
         font-size: 1.2rem;
+    }
+    
+    .present {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
 
     .title {
@@ -201,8 +209,8 @@ footer a {
     }
     
     .present {
-        margin-top: 3rem;
-        margin-bottom: 4rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
     }
     
     .title {
@@ -216,17 +224,13 @@ footer a {
     }
 
     footer {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 4rem;
         margin-bottom: 2rem;
         font-size: 1.2rem;
     }
     
     footer a {
-        display: block;
         margin-left: 1rem;
-        white-space: nowrap;
     }
     
     }   
@@ -257,7 +261,7 @@ footer a {
     }
     
     .present {
-        margin-top: 3rem;
+        margin-top: 4rem;
         margin-bottom: 2rem;
     }
         
