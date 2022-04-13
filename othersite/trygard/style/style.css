@@ -61,27 +61,30 @@ img {
     left: -2rem;
     top: -5rem;
     max-width: 200px;
+    padding: 0.3rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0 0 100px 0;
 }
 
 .menu {
     position: fixed;
     right: 15px;
-    top: 0;
+    top: 0.5rem;
     display: flex;
     justify-content: right;
-    margin-top: 2rem;
 }
 
 .nav {
     text-align: right;
     font-size: 1.4rem;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 1);
 }
 
 .nav-link {
     margin-left: 2rem;
     position: relative;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.7);
 }
 
 .nav-link:after {
@@ -118,8 +121,12 @@ img {
 }
 
 .present__foto33 {
-    width: 33%;
-    padding: 0 0 2rem 2rem;
+    width: 30%;
+}
+
+.present__foto33:hover {
+    transform: scale(2);
+    transition: linear 0.3s;
 }
 
 .product-details {
@@ -185,6 +192,10 @@ footer a {
 
 @media(max-width: 550px){
 
+    .container {
+        padding: 0 10px;
+    }
+
     h1 {
         font-size: 1.4rem;
     }
@@ -193,6 +204,7 @@ footer a {
         left: -2rem;
         top: -3rem;
         max-width: 150px;
+        border-radius: 0 0 70px 0;
     }
 
     .nav {
@@ -237,6 +249,10 @@ footer a {
     
 @media(max-width: 480px){
 
+    .container {
+        padding: 0 8px;
+    }
+
     h1 {
         font-size: 1.2rem;
     }
@@ -244,7 +260,6 @@ footer a {
     .logo {
         left: -2rem;
         top: -3rem;
-        max-width: 150px;
     }
 
     .nav {
@@ -252,7 +267,7 @@ footer a {
     }
 
     .nav-link {
-        margin-left: 0.5rem;
+        margin-left: 0.4rem;
     }
 
     .nav-link:after {
@@ -300,10 +315,15 @@ footer a {
     
 @media(max-width: 380px){
 
+    .container {
+        padding: 0 5px;
+    }
+
     .logo {
         left: -1.5rem;
         top: -2rem;
         max-width: 120px;
+        border-radius: 0 0 60px 0;
     }
 
     .nav {
