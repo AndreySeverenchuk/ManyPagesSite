@@ -1,0 +1,156 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $body;
+    margin: 0 auto;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// base class
+
+.page {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: $color;
+    color: $color2;    
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    width: calc(100% - 30px);
+    max-width: $container;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.mainBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.subBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.flexRow10 {    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+// text
+
+.textH1 {
+    color: $color;
+    text-align: left;
+}
+
+.texth1b {
+    color: $color2;
+    text-transform: uppercase;
+}
+
+// Picture
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.svg {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
+// btn
+
+.btn {
+    height: 58px;
+    width: auto;
+    padding: 14px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.btn--blue {
+    color: $color;
+    background-color: $bgcolor;
+
+    &:hover {
+        background-color: $bgcolor2;
+        transition: background-color .2s linear;
+    }
+}
+
+.btn--white {
+    color: $bgcolor;
+    background-color: $color;
+
+    &:hover {
+        background-color: $color4;
+        transition: background-color .2s linear;
+    }
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 18.5px 14px;
+    color: $color2;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 18.5px 14px;
+    color: $color2;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    height: 114px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    resize: none;
+}
