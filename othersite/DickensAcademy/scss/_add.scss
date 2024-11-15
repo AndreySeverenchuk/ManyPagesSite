@@ -1,0 +1,123 @@
+.column {
+    flex-direction: column;
+}
+
+.bgBlue {
+    background: $bgBlue;
+}
+
+.bgDarkBlue {
+    background: $bgcolor;
+}
+
+.grey {
+    color: $color2;
+}
+
+.gray {
+    background: $color3;
+}
+
+.blue {
+    color: $bgcolor;
+}
+
+.white {
+    color: $color;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {    
+    text-align: left;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+
+.mb31 {
+    margin-bottom: 31px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.pmr16b {
+    padding-right: 16px;
+    margin-right: 6px;
+    border-right: 2px solid $bgcolor;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.bb1 {
+    border-bottom: 1px solid $bgcolor;
+}
+
+.bb1w {
+    width: 100%;
+    border-bottom: 1px solid $color;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap25 {
+    gap: 25px;
+}
+
+.gap31 {
+    gap: 31px;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w213 {
+    width: 213px;
+}
+
+.w216 {
+    width: 216px;
+}
+
+.w235 {
+    width: 235px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+
+.mb72 {
+    margin-bottom: 72px;
+}

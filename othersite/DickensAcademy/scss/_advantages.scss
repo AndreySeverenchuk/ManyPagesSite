@@ -1,0 +1,18 @@
+.advantages {
+    display: flex;
+    height: 123px;
+    margin-top: 20px;
+    padding-left: 50px;
+    align-items: center;    
+    background: $color;
+}
+
+.advantagesCard {
+    padding: 30px;
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: $color;
+}

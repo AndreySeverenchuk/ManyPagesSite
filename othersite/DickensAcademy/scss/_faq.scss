@@ -1,0 +1,70 @@
+.faqW576 {
+    width: 57.6%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faqActive {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px 35px 40px;
+    border: 1px solid $bgcolor;
+    border-radius: 16px;
+}
+
+.faqNonActive {    
+    display: flex;
+    padding: 35px 40px 35px 40px;
+    border: 1px solid $bgcolor;
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqActiveTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqActiveText {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid $bgcolor;
+    margin-right: 80px;
+}
+
+.faqSq {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: $bgcolor;
+    padding: 8px;
+    border-radius: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $bgcolor2;
+    }
+}
+
+.faqAsk {
+    display: flex;
+    flex-grow: 1;    
+    flex-direction: column;
+    padding: 57.5px 60px;
+    gap: 40px;
+    border-radius: 14px;    
+    background-color: $bgcolor;
+    align-items: center;
+}
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
